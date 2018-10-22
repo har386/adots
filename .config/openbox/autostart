@@ -1,0 +1,2 @@
+xset -b
+(sleep 2s && compton) &
