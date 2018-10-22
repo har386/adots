@@ -4,6 +4,9 @@
   <item label="firefox">
     <action name="Execute"><command>firefox</command></action>
   </item>
+  <item label="keepassxc">
+    <action name="Execute"><command>keepassxc</command></action>
+  </item>
   <item label="xterm">
     <action name="Execute"><command>xterm</command></action>
   </item>
@@ -12,6 +15,9 @@
   </item>
   <item label="arandr">
     <action name="Execute"><command>arandr</command></action>
+  </item>
+  <item label="lxappearance">
+    <action name="Execute"><command>lxappearance</command></action>
   </item>
   <item label="Log Out">
     <action name="Exit"></action>

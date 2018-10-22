@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
 sudo pacman --noconfirm -Syu
-sudo pacman --noconfirm -S xorg xorg-drivers xorg-xinit xterm openbox firefox tmux vim fish noto-fonts compton ttf-hack keepassxc htop tree arandr xfce4-terminal 
+sudo pacman --noconfirm -S xorg xorg-drivers xorg-xinit xterm openbox firefox tmux vim fish noto-fonts compton ttf-hack keepassxc htop tree arandr xfce4-terminal aria2 mpv lxappearance
 
 mkdir ~/.config
 mkdir ~/.config/fontconfig
@@ -21,3 +20,8 @@ ln -sv ~/adots/.config/openbox/menu.xml ~/.config/openbox
 ln -sv ~/adots/.config/openbox/autostart ~/.config/openbox
 ln -sv ~/adots/.config/fontconfig/fonts.conf ~/.config/fontconfig
 
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg --noconfirm -si
+
+sudo systemctl stop systemd-journald-audit.socket && sudo systemctl mask systemd-journald-audit.socket
