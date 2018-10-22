@@ -8,14 +8,16 @@ mkdir ~/.config
 mkdir ~/.config/fontconfig
 
 cp -R /etc/xdg/openbox/ ~/.config/
-cp -R /etc/xdg/termite/ ~/.config/
+#cp -R /etc/xdg/termite/ ~/.config/
 
 rm ~/.config/openbox/menu.xml 
+rm ~/.config/openbox/autostart 
 
 ln -sv ~/adots/.gitconfig ~
 ln -sv ~/adots/.xinitrc ~
 ln -sv ~/adots/.tmux.conf ~
 ln -sv ~/adots/.config/compton.conf ~/.config
 ln -sv ~/adots/.config/openbox/menu.xml ~/.config/openbox
+ln -sv ~/adots/.config/openbox/autostart ~/.config/openbox
 ln -sv ~/adots/.config/fontconfig/fonts.conf ~/.config/fontconfig
 
