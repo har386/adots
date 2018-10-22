@@ -15,3 +15,5 @@ rm ~/.config/openbox/menu.xml
 ln -sv ~/adots/.config/openbox/menu.xml ~/.config/openbox
 ln -sv ~/adots/.config/fontconfig/fonts.conf ~/.config/fontconfig
 
+
+
