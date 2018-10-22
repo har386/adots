@@ -4,8 +4,14 @@
   <item label="firefox">
     <action name="Execute"><command>firefox</command></action>
   </item>
-  <item label="termite">
-    <action name="Execute"><command>termite</command></action>
+  <item label="xterm">
+    <action name="Execute"><command>xterm</command></action>
+  </item>
+  <item label="xfce4-terminal">
+    <action name="Execute"><command>xfce4-terminal</command></action>
+  </item>
+  <item label="arandr">
+    <action name="Execute"><command>arandr</command></action>
   </item>
   <item label="Log Out">
     <action name="Exit"></action>
