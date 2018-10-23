@@ -1,2 +1,6 @@
-xset -b
-(sleep 2s && compton) &
+#xset -b
+#(sleep 1s && compton) &
+#(sleep 2s && ksuperkey) &
+
+compton -b &
+ksuperkey &
