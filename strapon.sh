@@ -1,8 +1,9 @@
 #!/bin/bash
 
 sudo pacman --noconfirm -Syu
-sudo pacman --noconfirm -S xorg xorg-drivers xorg-xinit xterm openbox firefox tmux vim fish noto-fonts compton ttf-hack keepassxc htop tree arandr xfce4-terminal aria2 mpv lxappearance unzip rofi ksuperkey
+sudo pacman --noconfirm -S xorg xorg-drivers xorg-xinit xterm openbox firefox tmux vim fish noto-fonts compton ttf-hack keepassxc htop tree arandr xfce4-terminal aria2 mpv lxappearance unzip rofi termite
 
+rm -rf ~/.config
 mkdir ~/.config
 mkdir ~/.config/fontconfig
 
@@ -26,6 +27,6 @@ cd yay
 makepkg --noconfirm -si
 rm -rf yay
 
-yay --noconfirm -S ttf-lato polybar
+yay --noconfirm -S ttf-lato polybar ksuperkey
 
 sudo systemctl stop systemd-journald-audit.socket && sudo systemctl mask systemd-journald-audit.socket
