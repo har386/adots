@@ -4,3 +4,4 @@
 
 compton -b &
 ksuperkey &
+xfce-power-manager &
